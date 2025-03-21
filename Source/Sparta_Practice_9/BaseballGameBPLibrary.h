@@ -20,7 +20,7 @@ class SPARTA_PRACTICE_9_API UBaseballGameBPLibrary : public UBlueprintFunctionLi
 
 	/** 중복이 없는 3자리 자연수를 생성한다. */
 	UFUNCTION(BlueprintPure)
-	static int GenerateAnswerNumber();
+	static int32 GenerateAnswerNumber();
 
 	/** 유효한 정답 형식인지 검증한다. */
 	UFUNCTION(BlueprintPure)

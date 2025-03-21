@@ -10,26 +10,25 @@ void UBaseballGameBPLibrary::EvaluateGuess(const FString& Guess, const FString& 
 {
 	OutStrike = 0;
 	OutBall = 0;
-
 	if (Guess.Len() != 3 || Answer.Len() != 3)
 	{
 		return;
 	}
-
+	
 	for (int32 i = 0; i < 3; i++)
 	{
 		if (Guess[i] == Answer[i])
 		{
 			OutStrike++;
 		}
-		else if (Answer.FindChar(Guess[i], i))
+		else if (Answer.Contains(FString::Chr(Guess[i])))
 		{
 			OutBall++;
 		}
 	}
 }
 
-int UBaseballGameBPLibrary::GenerateAnswerNumber()
+int32 UBaseballGameBPLibrary::GenerateAnswerNumber()
 {
 	TArray<int> Numbers;
 	for (int i = 1; i <= 9; i++)

@@ -44,8 +44,10 @@ if is game over(3S)
     return
 
 // update next turn player
+increment index
 if index is out of range
-    increment turn number
+  reset index
+  increment turn number
 
 if turn number >= max turn
     boradcast current turn number
@@ -71,6 +73,7 @@ Copy ActivePlayers to GamePlayers
 Set bIsGamePlaying true
 Generate Answer
 Set First Turn Player
+Set Turn Count 0
 Broadcast Game Start
 ```
 
@@ -100,10 +103,15 @@ Broadcast Answer
 
 ## 작업 목록
 
-- [ ] Game Mode Refactoring
-  - [ ] Player 리스트를 TMap에서 TArray로 변경
-  - [ ] Host Player 선정 기능을 추가
+- [x] Game Mode Refactoring
+  - [x] Player 리스트를 TMap에서 TArray로 변경
+  - [x] Host Player 선정 기능을 추가
 - [ ] BaseBall Game 로직 추가
-  - [ ] Start Game
+  - [x] Start Game
   - [ ] Process Player Guess
   - [ ] End Game
+
+## 추후 구현
+
+- Turn Player 표시
+- Strike, Ball이 있을 때 말고 Out만 있을 때 표시 변경
