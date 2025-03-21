@@ -10,9 +10,13 @@
 
 ## 게임의 흐름
 
+![Image](./Doc/GameFlow.png)
+
 ## 게임 진행 방법
 
 ### 닉네임 설정 기능
+
+![Image](https://github.com/user-attachments/assets/fbcc7d6e-5a8b-46b2-89d8-f744bb439a96)
 
 - 닉네임 설정 조건
   - 중복되지 않음
@@ -20,6 +24,8 @@
   - 3-8글자
 
 ### 숫자 야구 게임
+
+![숫자 야구 게임 캡처](https://github.com/user-attachments/assets/422cb6bd-2ed0-4a7e-8e68-95af2fca73c8)
 
 - Listen Server가 /start 명령어를 치면 게임이 진행
 - 로그인 서버에 진행된 순서대로 /숫자 세 자리를 입력하면 숫자가 제출
