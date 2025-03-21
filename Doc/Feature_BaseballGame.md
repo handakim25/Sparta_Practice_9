@@ -106,10 +106,10 @@ Broadcast Answer
 - [x] Game Mode Refactoring
   - [x] Player 리스트를 TMap에서 TArray로 변경
   - [x] Host Player 선정 기능을 추가
-- [ ] BaseBall Game 로직 추가
+- [x] BaseBall Game 로직 추가
   - [x] Start Game
-  - [ ] Process Player Guess
-  - [ ] End Game
+  - [x] Process Player Guess
+  - [x] End Game
 
 ## 추후 구현
 
